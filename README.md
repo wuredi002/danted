@@ -98,7 +98,7 @@ curl https://ifconfig.co --socks5 127.0.0.1:2020 --proxy-user sockd:sockd
 ## Install by Script
 
 ```bash
-wget --no-check-certificate https://raw.github.com/Lozy/danted/master/install.sh -O install.sh
+wget --no-check-certificate https://raw.github.com/wuredi002/danted/master/install.sh -O install.sh
 bash install.sh
 
 # run with options: bash install.sh option1 option2
