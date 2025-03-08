@@ -3,7 +3,7 @@
 # 提供服务: sockd.info (Lozy)
 #
 
-VERSION="1.4.2"  # 版本号
+VERSION="1.3.2"  # 版本号
 INSTALL_FROM="compile"  # 安装方式（编译）
 DEFAULT_PORT="2016"  # 默认端口
 DEFAULT_USER=""  # 默认用户名
@@ -141,7 +141,7 @@ generate_config_whitelist(){
 
 # 生成配置文件底部
 generate_config_bottom(){
-    if [ "$VERSION" == "1.4.3" ];then
+    if [ "$VERSION" == "1.3.2" ];then
     cat <<EOF
 pass {
         from: 0.0.0.0/0 to: 0.0.0.0/0
