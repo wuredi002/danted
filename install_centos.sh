@@ -3,9 +3,9 @@
 # 提供服务: sockd.info (Lozy)
 #
 
-VERSION="1.4.4"  # 版本号
+VERSION="1.4.3"  # 版本号
 INSTALL_FROM="compile"  # 安装方式（编译）
-DEFAULT_PORT="2024"  # 默认端口
+DEFAULT_PORT="2016"  # 默认端口
 DEFAULT_USER=""  # 默认用户名
 DEFAULT_PAWD=""  # 默认密码
 WHITE_LIST_NET=""  # IP 白名单网络
@@ -74,7 +74,7 @@ generate_config_iplist(){
 
 # 生成静态配置
 generate_config_static(){
-    if [ "$VERSION" == "1.4.4" ];then
+    if [ "$VERSION" == "1.4.3" ];then
     cat <<EOF
 method: pam none
 clientmethod: none
@@ -141,7 +141,7 @@ generate_config_whitelist(){
 
 # 生成配置文件底部
 generate_config_bottom(){
-    if [ "$VERSION" == "1.4.4" ];then
+    if [ "$VERSION" == "1.4.3" ];then
     cat <<EOF
 pass {
         from: 0.0.0.0/0 to: 0.0.0.0/0
