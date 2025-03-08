@@ -3,7 +3,7 @@
 # 提供: sockd.info (Lozy)
 #
 
-VERSION="1.4.3"  # 版本号
+VERSION="1.4.2"  # 版本号
 INSTALL_FROM="compile"  # 安装方式，默认从源码编译安装
 DEFAULT_PORT="2024"  # 默认端口
 DEFAULT_USER=""  # 默认用户名
@@ -75,7 +75,7 @@ generate_config_iplist(){
 
 # 生成静态配置
 generate_config_static(){
-    if [ "$VERSION" == "1.4.3" ];then
+    if [ "$VERSION" == "1.4.2" ];then
     cat <<EOF
 method: pam none
 clientmethod: none
